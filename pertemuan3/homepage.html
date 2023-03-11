@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan E-Koperasi</title>
+    <style>
+   @font-face {
+        font-family: Aeonik;
+        src: url(aeoniktrial-regular-webfont.woff)
+      }
+    @font-face {
+        font-family: Aeonik-Bold;
+        src: url(aeoniktrial-bolditalic-webfont.woff);
+    }
+    h3{
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-kerning: none;
+    }
+
+    form{
+    width:35rem;
+    margin: auto;
+    color:rgb(0, 0, 0);
+    }
+    input{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 15px 18px;
+    box-sizing: border-box;
+    }
+    ::placeholder{
+    color: rgb(11, 198, 24);
+    opacity: 0.60;
+    }
+
+    body {
+    background-image: url(/gambar/25487451.svg);
+    background-repeat: repeat-x;
+    height: 30px;
+    width: 100%;
+    }
+    div{
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    select {
+            width: 75%;
+            margin: 10px 0;
+            border-radius: 5px;
+            padding: 15px 18px;
+            box-sizing: border-box;
+        }
+        option {
+            min-width: 35rem;
+            box-sizing: border-box;
+        }
+    
+        .button {
+        background-color: #59BD8B;
+        border: none;
+        color: white;
+        width: 20%;
+        height: 40px;
+        padding : 15px 18px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin-left: 4%;
+        font-family: 'Aeonik';
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+        }
+        textarea{
+            border-radius: 5px;
+            font-family: 'Aeonik';
+            margin: 10px 0;
+            border-radius: 5px;
+            padding: 15px 18px;
+            box-sizing: border-box
+
+        }
+        table{
+            border-radius: 5px;
+            height: 40px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        }
+        .container {
+        margin: 0;
+        width: 100% ;
+        overflow: hidden;
+        }
+
+        .container input {
+        font-family: 'Aeonik';
+        width: 16%;
+        margin: 10px 0;
+        border-radius: 5px;
+        padding: 15px 18px;
+        box-sizing: border-box;
+        text-align: center;}
+
+    </style>
+    
+</head>
+<body>
+    
+
+<div>
+    <center><img src="/gambar/logo-removebg-preview.png" alt="" alignment="center"></center>
+    <center>
+    <table border="0" bgcolor=#59BD8B style="width: 35rem">
+        <tr>
+            <th><span style="font-family:'Aeonik-Bold'; color: lavenderblush;">FORM PEMESANAN</span></th>
+        </tr>
+    </table>
+    </center>
+    <br>
+    <form> 
+        <pre><span style="font-family:'Aeonik' ;"> Nama Depan    : </span></pre>
+        <input type="text" name="namadepan" placeholder="Masukan Nama Depan">
+        <pre><span style="font-family: 'Aeonik';"> Nama Belakang : </span></pre>
+        <input type="text" name="namabelakang" placeholder="Masukan Nama Belakang"> 
+        <pre><span style="font-family: 'Aeonik';"> NIU           : </span></pre>
+        <!-- <input type="text" name="niu" placeholder="Masukan NIU"> -->
+        <div class="container">
+            <input type="text" name="digit1" maxlength="1" >
+            <input type="text" name="digit2" maxlength="1" >
+            <input type="text" name="digit3" maxlength="1" >
+            <input type="text" name="digit4" maxlength="1" >
+            <input type="text" name="digit5" maxlength="1" >
+            <input type="text" name="digit6" maxlength="1" >
+        </div>
+        
+        
+        <pre><span style="font-family: 'Aeonik';"> Pesanan       : </span></pre>
+        <textarea name="" id="" cols="74" rows="10" placeholder="Sertakan nama barang dan banyak jumlah yang ingin dibeli."></textarea>
+        <pre><span style="font-family: 'Aeonik';"> Pembayaran            : </span></pre>
+        <select style="font-family: 'Aeonik';">
+            <option value="blue">Tunai</option>
+            <option value="red">Transfer Bank</option>
+            <option value="orange">Q-RIS</option>
+          <select>
+        
+        <button class="button">BAYAR</button>
+    </form>
+</div>
+</body>
+</html>
