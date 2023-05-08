@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+nav{
+    overflow: hidden;
+}
+
 @font-face {
     font-family: Aeonik;
     src: url(font/aeoniktrial-regular-webfont.woff)
@@ -18,6 +22,7 @@
 body{
     width: 100%;
     font-family: 'Aeonik';
+    overflow-x: hidden;
 }
 .masthead {
     background-image:url(pexels-muffin-creatives-1646311.jpg) ;
@@ -50,6 +55,7 @@ p{
 
 .detailp{
     text-align: left;
+    font-size: medium;
 
 }
 
@@ -66,7 +72,7 @@ p{
     /* background-color: rgba(3, 37, 108, 0.4); */
     height: 100%;
     width: 100%;
-    padding: 5rem;
+    padding: 3rem;
 
 }
 
@@ -94,14 +100,17 @@ p{
 
 #btn-align{
     border-color: black;
+    width: 165px;
 }
 
 #btn-kickstart{
     border-color: black;
+    width: 165px;
 }
 
 #btn-amplify{
     border-color: black;
+    width: 165px;
 }
 
 #btn-send{
@@ -154,3 +163,13 @@ input{
 .bg-transparent{
     transition: all ease-in-out .3s;
 }
+
+.box{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
